@@ -1,0 +1,153 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bynnean.cartoon.ui.IndividualActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/individual_activity"
+        android:textSize="25sp"
+        android:gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/background_floating_material_dark"
+        android:layout_height="180dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/individual_head_portrait"
+            android:src="@drawable/ic_personal_headportrait"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/individual_name"
+            android:text="@string/individual_name"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/background_floating_material_light"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/individual_head_portrait" />
+    </RelativeLayout>
+    <!-- 我的消息-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:onClick="IndividualItemMessage"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_me_item_message"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="@string/individual_message"/>
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_listitem_next"/>
+    </LinearLayout>
+
+    <!-- 我的关注-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:onClick="IndividualItemFollow"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_me_item_follow"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="@string/individual_follow"/>
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_listitem_next"/>
+    </LinearLayout>
+    <!-- 我的收藏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:onClick="IndividualItemCollection"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_me_item_collection"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="@string/individual_collection"/>
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_listitem_next"/>
+    </LinearLayout>
+    <!-- 设置-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="15dp"></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:onClick="IndividualItemSetup"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_me_item_setup"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="@string/individual_setup"/>
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_listitem_next"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemlayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_vertical_gridview_item"
+        android:layout_width="160dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_common_placeholder_ss" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/ic_common_mask">
+
+        <TextView
+            android:id="@+id/tv_title_gridview_item"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="3dp"
+            android:text="Info"
+            android:textColor="#fff"
+            android:textSize="18sp"></TextView>
+
+        <TextView
+            android:id="@+id/tv_nickname_gridview_item"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="3dp"
+            android:text="Title"
+            android:textColor="#fff"
+            android:textSize="14sp"></TextView>
+    </RelativeLayout>
+</FrameLayout>

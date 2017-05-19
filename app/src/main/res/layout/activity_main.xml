@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_vp_show"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </android.support.v4.view.ViewPager>
+
+
+    <LinearLayout
+        android:id="@+id/main_rg_tab_host"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_groupitem_height"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:id="@+id/tuijian"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:tag="0"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="@dimen/main_img_width"
+                android:layout_height="@dimen/main_img_width"
+                android:layout_gravity="center"
+                android:src="@drawable/main_btn_selector_look"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_tv_look"
+                android:clickable="true"
+                android:textColor="@drawable/color_tab_text"
+                android:textSize="@dimen/titel_ssmall_textsize"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+        
+        <View
+            android:layout_width="0.2dip"
+            android:layout_height="match_parent"
+            android:background="#e0aaaaaa"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            />
+        
+
+        <LinearLayout
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:tag="1"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="@dimen/main_img_width"
+                android:layout_height="@dimen/main_img_width"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:src="@drawable/main_btn_selector_find"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_tv_find"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:textColor="@drawable/color_tab_text"
+                android:textSize="@dimen/titel_ssmall_textsize"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.2dip"
+            android:layout_height="match_parent"
+            android:background="#e0aaaaaa"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/mine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:tag="2"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="@dimen/main_img_width"
+                android:layout_height="@dimen/main_img_width"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:src="@drawable/main_btn_selector_me"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_tv_me"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:textColor="@drawable/color_tab_text"
+                android:textSize="@dimen/titel_ssmall_textsize"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

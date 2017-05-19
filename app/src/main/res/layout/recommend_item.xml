@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginBottom="4.0dip"
+    android:layout_marginTop="4.0dip"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@color/color_G5" />
+
+    <RelativeLayout
+        android:id="@+id/comic_author_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:layout_alignParentTop="true"
+        android:background="@color/color_white">
+
+        <ImageView
+            android:id="@+id/comic_author_avatar"
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:background="@drawable/ic_feed_list_headportrait"
+            android:padding="1.0px"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/comic_topic_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="10.0dip"
+            android:singleLine="true"
+            android:text="专题"
+            android:textColor="@color/color_A"
+            android:textSize="12.0sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_toLeftOf="@id/comic_topic_text"
+            android:layout_toRightOf="@id/comic_author_avatar"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/comic_author_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="4.0"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="尤米同学"
+                android:textColor="@color/color_G1"
+                android:textSize="15.0sp" />
+
+            <TextView
+                android:id="@+id/topic_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="6.0"
+                android:ellipsize="middle"
+                android:gravity="right|center"
+                android:singleLine="true"
+                android:textColor="@color/color_G2"
+                android:textSize="12.0sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/cover_image_border"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comic_author_layout"
+        >
+
+        <ImageView
+            android:id="@+id/cover_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/comic_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cover_image_border"
+            android:layout_gravity="bottom|left|center"
+            android:background="@drawable/ic_common_mask"
+            android:ellipsize="end"
+            android:gravity="bottom|left|center"
+            android:paddingBottom="5.0dip"
+            android:paddingLeft="10.0dip"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="14.0sp" />
+    </FrameLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff0f0f0">
+
+    <LinearLayout
+        android:id="@+id/search_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/color_K"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="28.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_rounded_corner_search_edittext"
+            android:orientation="horizontal"
+            android:paddingLeft="8.0dip"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:layout_width="13.0dip"
+                android:layout_height="13.0dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="7.0dip"
+                android:background="@drawable/ic_search_searchbar_search" />
+
+            <EditText
+                android:clickable="true"
+                android:focusable="false"
+                android:editable="false"
+                android:id="@+id/search_input"
+                android:layout_width="match_parent"
+                android:layout_height="18.0dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20.0dip"
+                android:background="@null"
+                android:hint="搜索作品名、作者名"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textColorHint="@color/color_aeaeae"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/search_searchbar_del"
+                android:layout_width="14.0dip"
+                android:layout_height="14.0dip"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="7.0dip"
+                android:background="@drawable/ic_search_searchbar_delete"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <TextView
+            android:onClick="onSearch"
+            android:clickable="true"
+            android:id="@+id/search_bar_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:text="取消"
+            android:textColor="@color/color_G0"
+            android:textSize="17.0sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/search_action_bar_line"
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:layout_below="@id/search_title_bar"
+        android:background="@color/color_d0d0d0" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_action_bar_line"
+        android:layout_marginTop="10dp"
+        >
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            android:scrollbars="none" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>

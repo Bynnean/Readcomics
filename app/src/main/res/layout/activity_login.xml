@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff0f0f0"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar_actionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/color_K"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextAppearance="@style/ActionBar.TitleText">
+
+        <TextView
+            android:id="@+id/toolbar_center_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="登录"
+            android:textColor="@color/color_241c09"
+            android:textSize="19.0sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:id="@+id/toolbar_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_below="@id/toolbar_actionbar"
+        android:background="#ffd0d0d0" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_divider"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginRight="8.0dip"
+        android:layout_marginTop="10.0dip"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="46.0dip"
+            android:background="#ffffffff"
+            android:gravity="center_vertical"
+            android:paddingLeft="10.0dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机号"
+                android:textColor="@color/theme_primary"
+                android:textSize="18.0sp" />
+
+            <EditText
+                android:id="@+id/phone_login"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10.0dip"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="支持中国大陆"
+                android:maxLength="11"
+                android:phoneNumber="true"
+                android:singleLine="true"
+                android:textColor="#ff241c09"
+                android:textColorHint="#ffacacac"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="46.0dip"
+            android:layout_marginTop="16.0sp"
+            android:background="#ffffffff"
+            android:gravity="center_vertical"
+            android:paddingLeft="10.0dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密    码"
+                android:textColor="@color/theme_primary"
+                android:textSize="18.0sp" />
+
+            <EditText
+                android:id="@+id/pwd_login"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10.0dip"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="8-30位数字或英文"
+                android:password="true"
+                android:singleLine="true"
+                android:textColor="#ff241c09"
+                android:textColorHint="#ffacacac"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4.0dip"
+            android:layout_marginRight="4.0dip"
+            android:layout_marginTop="15.0sp">
+
+            <TextView
+                android:id="@+id/register_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="我要注册"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/forget_pwd_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:hint="忘记密码?"
+                android:textSize="14.0sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="fill_parent"
+            android:layout_height="42.0dip"
+            android:layout_marginTop="25.0dip"
+            android:background="@drawable/bg_rounded_corner_primary_color"
+            android:gravity="center"
+            android:text="登录"
+            android:textColor="@color/white"
+            android:textSize="18.0sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/weibo_login"
+        android:layout_width="110.0dip"
+        android:layout_height="28.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30.0dip"
+        android:background="@drawable/bg_rounded_corner_login_weibo"
+        android:drawableLeft="@drawable/ic_login_weibo"
+        android:drawablePadding="2.0dip"
+        android:paddingLeft="4.0dip"
+        android:paddingRight="4.0dip"
+        android:text="新浪微博登录"
+        android:textColor="#ff757575"
+        android:textSize="12.0sp" />
+</RelativeLayout>

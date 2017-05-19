@@ -1,0 +1,127 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#fafafa" >
+
+<!--     <include layout="@layout/toobar" /> -->
+    <RelativeLayout 
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nearby_top_buttons_height"
+        android:background="#ff8c00"
+        android:minHeight="?attr/actionBarSize" >
+        
+        <Button 
+              android:id="@+id/back_btn"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/adward_navigationbar_icon_back_highlighted"
+              android:layout_marginLeft="@dimen/nearby_mar_left"
+              android:layout_centerVertical="true"
+          />
+        
+        
+        
+        
+         <RelativeLayout 
+             android:id="@+id/pay"
+             android:layout_width="@dimen/nearby_tab_height"
+             android:layout_height="@dimen/nearby_bottom_text_height"
+             android:layout_alignParentRight="true"
+             android:layout_marginRight="@dimen/nearby_mar_left"
+             android:layout_centerVertical="true"
+             android:background="@drawable/pay_background"
+             >
+             <TextView 
+                 android:id="@+id/paytext"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerInParent="true"
+                 />
+         </RelativeLayout>
+        
+    </RelativeLayout>
+    
+    
+    <HorizontalScrollView
+        android:id="@+id/horizontalscroll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_detail_width_80"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/title_layout"
+          android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/request_tab_background"
+            android:orientation="vertical" >
+
+               <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/tab_line"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:scaleType="matrix"
+                android:src="@drawable/direct_claaasify_tab_line" />
+        </LinearLayout>
+    </HorizontalScrollView>
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+<!--     <Button -->
+<!--         android:id="@+id/cleap_one" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="@dimen/nearby_map_switch_width" -->
+<!--         android:layout_marginLeft="@dimen/tab_icon_home_height" -->
+<!--         android:layout_marginRight="@dimen/tab_icon_home_height" -->
+<!--         android:layout_marginTop="@dimen/my_notice_center_top_margin" -->
+<!--         android:background="@drawable/btn_edit_layout" -->
+<!--         android:text="0.1元暂看一本" -->
+<!--         android:textColor="#e0303030" -->
+<!--         android:textSize="@dimen/text_17" /> -->
+    
+<!--       <Button -->
+<!--         android:id="@+id/pay_bymonth" -->
+<!--         android:layout_below="@id/cleap_one" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="@dimen/nearby_map_switch_width" -->
+<!--         android:layout_marginLeft="@dimen/tab_icon_home_height" -->
+<!--         android:layout_marginRight="@dimen/tab_icon_home_height" -->
+<!--         android:layout_marginTop="@dimen/my_left_margin" -->
+<!--         android:background="@drawable/btn_edit_layout" -->
+<!--         android:text="包月,任意五本一月10元" -->
+<!--         android:textColor="#e0303030" -->
+<!--         android:textSize="@dimen/text_17" /> -->
+        
+        
+<!--           <Button -->
+<!--         android:id="@+id/all_see" -->
+<!--         android:layout_below="@id/pay_bymonth" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="@dimen/nearby_map_switch_width" -->
+<!--         android:layout_marginLeft="@dimen/tab_icon_home_height" -->
+<!--         android:layout_marginRight="@dimen/tab_icon_home_height" -->
+<!--         android:layout_marginTop="@dimen/my_left_margin" -->
+<!--         android:background="@drawable/btn_edit_layout" -->
+<!--         android:text="包月,随意看一月20元" -->
+<!--         android:textColor="#e0303030" -->
+<!--         android:textSize="@dimen/text_17" /> -->
+</LinearLayout>

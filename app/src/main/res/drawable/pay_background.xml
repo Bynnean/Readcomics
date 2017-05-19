@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 内部颜色 -->
+    <solid android:color="#660000" />
+    <!-- 边缘线条颜色 -->
+    <stroke
+        android:width="1dp"
+        android:color="#20ffffff" />
+    <!-- 圆角的幅度 -->
+    <corners
+        android:bottomLeftRadius="@dimen/nearby_margin_left"
+        android:bottomRightRadius="@dimen/nearby_margin_left"
+        android:topLeftRadius="@dimen/nearby_margin_left"
+        android:topRightRadius="@dimen/nearby_margin_left" />
+
+    <gradient
+        android:centerX="0.5"
+        android:centerY="0.5"
+        android:gradientRadius="@dimen/nearby_tab_height"
+        android:type="radial"
+        android:startColor="#aa0000"
+        android:centerColor="#aa0000"
+        android:endColor="#ff8c00"/>
+
+</shape>

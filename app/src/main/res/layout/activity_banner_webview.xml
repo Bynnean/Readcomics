@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bynnean.cartoon.ui.BannerWebViewActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:onClick="onCancel"
+            android:id="@+id/cancel_webview"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:clickable="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_nav_delete" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/color_241c09"
+            android:text="网页"
+            android:textSize="22sp" />
+        <ImageView
+            android:clickable="true"
+            android:src="@drawable/ic_webview_share_btn"
+            android:id="@+id/share_webview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:gravity="center" />
+    </LinearLayout>
+<WebView
+    android:id="@+id/webview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"></WebView>
+</LinearLayout>

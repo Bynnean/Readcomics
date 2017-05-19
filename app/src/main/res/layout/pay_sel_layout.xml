@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff0f0f0"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar_actionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/color_K"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextAppearance="@style/ActionBar.TitleText">
+
+        <TextView
+            android:id="@+id/toolbar_center_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="在线支付"
+            android:textColor="@color/color_241c09"
+            android:textSize="19.0sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:id="@+id/toolbar_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_below="@id/toolbar_actionbar"
+        android:background="#ffd0d0d0" />
+
+    <RelativeLayout
+        android:id="@+id/pay_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/public_tab_height"
+        android:layout_below="@id/toolbar_divider"
+        android:background="#e0e0e0">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付方式"
+            android:textColor="#222222"
+            android:textSize="@dimen/titel_small_textsize"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/tab_icon_my_width"/>
+         
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/tab_icon_my_width"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="实付金额:"
+                android:textColor="#222222"
+                android:layout_gravity="center"
+                android:textSize="@dimen/titel_small_textsize"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/tab_icon_my_width"/>
+
+            <TextView
+                android:id="@+id/pay_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.00"
+                android:layout_gravity="center"
+                android:textColor="#ffba00"
+                android:textSize="@dimen/titel_middle_textsize"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/tab_icon_my_width"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pay_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nearby_map_switch_width"
+        android:layout_marginTop="@dimen/nearby_margin_right"
+        android:layout_below="@id/pay_info">
+
+        <ImageView
+            android:layout_width="@dimen/nearby_map_switch_height"
+            android:layout_height="@dimen/nearby_map_switch_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/nearby_map_switch_height"
+            android:src="@drawable/msp_icon"/>
+
+        <ImageView
+            android:layout_width="@dimen/nearby_back_icon_height"
+            android:layout_height="@dimen/nearby_back_icon_height"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/nearby_map_switch_height"
+            android:src="@drawable/pay_sel"/>
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dip"
+        android:background="#d0d0d0"
+        />
+
+    <Button
+        android:layout_below="@id/pay_list"
+        android:id="@+id/btn_login"
+        android:layout_width="fill_parent"
+        android:layout_height="42.0dip"
+        android:layout_marginTop="@dimen/nearby_list_item_height"
+        android:background="@drawable/bg_rounded_corner_primary_color"
+        android:gravity="center"
+        android:text="确认支付"
+        android:textColor="@color/white"
+        android:textSize="18.0sp" />
+
+
+</LinearLayout>

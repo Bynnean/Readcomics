@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_reveal_white_b"
+    android:orientation="horizontal"
+    tools:context=".ui.MyFollowActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:id="@+id/follow_image"
+        android:src="@drawable/bg_reveal_white_b"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/follow_name"
+            android:text="AAA"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/follow_author"
+            android:text="bbb"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/follow_id"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/follow_abstract"
+            android:text="ccc"/>
+    </LinearLayout>
+</LinearLayout>

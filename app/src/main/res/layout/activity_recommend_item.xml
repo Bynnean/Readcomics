@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bynnean.cartoon.ui.RecommendItemActivity">
+        <LinearLayout
+            android:id="@+id/linearlayout_item"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/recommend_item_iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:clickable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_up_indicator" />
+
+            <TextView
+                android:id="@+id/recommend_item_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:gravity="center"
+                android:text="漫画的title"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/recommend_item_tv_all"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="全集"
+                android:textColor="@color/color_A"
+                android:textSize="18sp" />
+        </LinearLayout>
+    <ListView
+        android:layout_below="@id/linearlayout_item"
+        android:id="@+id/recommend_item_lv_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        android:layout_weight="1"/>
+    <!--<LinearLayout-->
+        <!--android:id="@+id/lin_item"-->
+        <!--android:background="#70cccccc"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_height="40dp">-->
+        <!--<ImageView-->
+            <!--android:id="@+id/collection_recommend_item"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:clickable="true"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:src="@drawable/ic_album_nav_collection"-->
+            <!--android:layout_height="30dp" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/album_recommend_item"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:clickable="true"-->
+            <!--android:src="@drawable/ic_home_share"-->
+            <!--android:layout_height="30dp" />-->
+    <!--</LinearLayout>-->
+</LinearLayout>

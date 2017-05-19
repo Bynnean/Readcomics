@@ -1,0 +1,51 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_primary"
+    tools:context=".ui.StartActivity">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/search_image_height"
+        android:layout_height="@dimen/search_image_height"
+        android:src="@drawable/log"
+        android:background="@null"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/login_header_height"/>
+
+
+        <TextView
+            android:layout_below="@id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/main_item_padding"
+            android:textSize="@dimen/titel_big_textsize"/>
+
+
+
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Copyright @2016 AdventureDog.com"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/tab_icon_home_width"
+        android:textSize="@dimen/ssmall_textsize"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All Right Reserved"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/btn_height"
+        android:textSize="@dimen/ssmall_textsize"/>
+
+
+</RelativeLayout>
